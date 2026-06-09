@@ -1,0 +1,9 @@
+accelerate>=1.1
+joblib>=1.4
+matplotlib>=3.8
+openai>=1.0
+pandas>=2.0
+python-dotenv>=1.0
+scikit-learn>=1.4
+torch>=2.0
+transformers>=4.45

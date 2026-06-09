@@ -1,0 +1,16 @@
+﻿text,true_label,pred_label,confidence
+演员之间的化学反应为零,negative,neutral,0.9891795
+这个节奏，不去当DJ可惜了,sarcasm,negative,0.49816048
+这个角色的成长弧线简直是直线下滑,sarcasm,negative,0.7187837
+配音感染力十足，听得我起鸡皮疙瘩,positive,sarcasm,0.8083607
+动画分镜节奏流畅,positive,neutral,0.9463472
+他的角色背景写得很详细,neutral,positive,0.5724019
+这节奏堪称完美，全程无尿点,sarcasm,positive,0.97558695
+男主角的职业是程序员，每天加班到很晚,neutral,negative,0.9152017
+听着这种配音想单曲循环,positive,negative,0.9846282
+节奏慢得我都刷了好几次手机才看完,negative,sarcasm,0.9243371
+这节奏挺适合当催眠曲的,sarcasm,neutral,0.572044
+姐妹反目桥段有层次,positive,neutral,0.9814494
+声音控制力真强，强弱转换自如,positive,sarcasm,0.7383824
+故事紧凑到舍不得快进,positive,sarcasm,0.8577222
+反转精彩，完全猜不到下一步发展,positive,sarcasm,0.9827399

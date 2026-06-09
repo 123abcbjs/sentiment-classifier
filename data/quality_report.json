@@ -1,0 +1,35 @@
+{
+  "raw_rows": 2000,
+  "invalid_json_lines": 0,
+  "removed_by_validation": 0,
+  "duplicates_removed": 0,
+  "final_rows": 2000,
+  "label_distribution": {
+    "positive": 500,
+    "neutral": 500,
+    "negative": 500,
+    "sarcasm": 500
+  },
+  "aspect_distribution": {
+    "剧情": 400,
+    "画质": 400,
+    "配音": 400,
+    "节奏": 400,
+    "角色": 400
+  },
+  "text_length": {
+    "count": 2000.0,
+    "mean": 13.34,
+    "std": 3.48,
+    "min": 6.0,
+    "25%": 11.0,
+    "50%": 13.0,
+    "75%": 15.0,
+    "max": 32.0
+  },
+  "split_sizes": {
+    "train": 1600,
+    "valid": 200,
+    "test": 200
+  }
+}
