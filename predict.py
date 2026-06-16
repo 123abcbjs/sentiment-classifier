@@ -7,7 +7,6 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 ROOT = Path(__file__).resolve().parent
 
-# 预测参数，想预测别的句子或者换模型，就直接改这里。
 TEXT = "画面清晰，色彩也很舒服"
 MODEL_NAME = "baseline"
 

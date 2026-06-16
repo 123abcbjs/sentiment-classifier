@@ -14,12 +14,10 @@ label_list = ["positive", "neutral", "negative", "sarcasm"]
 aspect_list = ["剧情", "画质", "配音", "节奏", "角色"]
 
 
-# 人工抽查样本数量，想改就直接改这里。
 REVIEW_SIZE = 200
 
 
 def delete_url(text):
-    # 不用正则，手动从字符串中删除 http、https、www 开头的网址。
     text = str(text)
     result = ""
     i = 0

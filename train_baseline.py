@@ -27,7 +27,7 @@ def main():
     df_train = pd.read_csv(train_path)
     df_test = pd.read_csv(test_path)
 
-    # 3.创建 TF-IDF + 逻辑回归模型
+    # 3.创建 TF-IDF + 逻辑回归
     model = Pipeline(
         [
             (

@@ -17,21 +17,20 @@ label_list = ["positive", "neutral", "negative", "sarcasm"]
 aspect_list = ["剧情", "画质", "配音", "节奏", "角色"]
 
 
-# 生成数据的参数，想改就直接改这里，不用命令行传参。
 PER_COMBINATION = 100
 BATCH_SIZE = 20
 MAX_RETRIES = 4
 
 
 def normalize_text(text):
-    # 1.转成字符串
+
     text = str(text)
-    # 2.去掉所有空白字符，不使用正则
+
     new_text = ""
     for ch in text:
         if not ch.isspace():
             new_text += ch
-    # 3.去掉开头结尾常见标点
+
     new_text = new_text.strip("，。！？,.!? ")
     return new_text
 
@@ -74,17 +73,17 @@ def build_prompt(label, aspect, amount, seed_words):
         "sarcasm": "表面像夸奖，实际表达讽刺或不满",
     }
     prompt = f"""请生成 {amount} 条中文短评论，用于文本分类实验。
-所有评论的标签必须是 {label}，含义为：{label_meaning[label]}。
-所有评论主要评价对象必须是：{aspect}。
-
-要求：
-1. 每条 8-45 个中文字符，像普通用户随手写的评论。
-2. 句式和措辞必须多样，不要编号，不要解释标签。
-3. 不要出现“小红书”“数据集”“标签”等词。
-4. 避免与这些提示词形成固定模板：{seed_words}。
-5. 只返回 JSON 对象，格式为：
-{{"items":[{{"text":"评论正文","label":"{label}","aspect":"{aspect}"}}]}}
-"""
+        所有评论的标签必须是 {label}，含义为：{label_meaning[label]}。
+        所有评论主要评价对象必须是：{aspect}。
+        
+        要求：
+        1. 每条 8-45 个中文字符，像普通用户随手写的评论。
+        2. 句式和措辞必须多样，不要编号，不要解释标签。
+        3. 不要出现“小红书”“数据集”“标签”等词。
+        4. 避免与这些提示词形成固定模板：{seed_words}。
+        5. 只返回 JSON 对象，格式为：
+        {{"items":[{{"text":"评论正文","label":"{label}","aspect":"{aspect}"}}]}}
+        """
     return prompt
 
 

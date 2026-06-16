@@ -16,7 +16,7 @@ SPLIT_DIR = ROOT / "data" / "splits"
 MODEL_DIR = ROOT / "models" / "bert"
 OUTPUT_DIR = ROOT / "outputs" / "bert"
 
-# BERT 训练参数，想改就直接改这里，不用命令行传参。
+# BERT 训练参数
 MODEL_NAME = "bert-base-chinese"
 EPOCHS = 3
 BATCH_SIZE = 16
